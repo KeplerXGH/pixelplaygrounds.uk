@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Playgrounds: Champions of the Stream</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('gaming-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 50px 0;
+            animation: titleAnimation 1.5s ease-in-out forwards, rgbEffect 6s infinite;
+        }
+
+        @keyframes rgbEffect {
+            0% {color: red;}
+            33% {color: green;}
+            66% {color: blue;}
+            100% {color: red;}
+        }
+        
+        .twitch-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .streamer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pixel Playgrounds: Champions of the Stream</h1>
+    <div class="twitch-links">
+        <!-- KeplerX -->
+        <div class="streamer">
+            <!-- Stream -->
+            <iframe 
+                src="https://player.twitch.tv/?channel=keplerx&parent=example.com" 
+                height="300" 
+                width="500" 
+                frameborder="0" 
+                scrolling="no" 
+                allowfullscreen="true">
+            </iframe>
+            
+            <!-- Chat -->
+            <iframe 
+                frameborder="0" 
+                scrolling="no" 
+                src="https://www.twitch.tv/embed/keplerx/chat?parent=example.com" 
+                height="300" 
+                width="300">
+            </iframe>
+        </div>
+
+        <!-- Prosprox -->
+        <div class="streamer">
+            <!-- Stream -->
+            <iframe 
+                src="https://player.twitch.tv/?channel=prosprox&parent=example.com" 
+                height="300" 
+                width="500" 
+                frameborder="0" 
+                scrolling="no" 
+                allowfullscreen="true">
+            </iframe>
+            
+            <!-- Chat -->
+            <iframe 
+                frameborder="0" 
+                scrolling="no" 
+                src="https://www.twitch.tv/embed/prosprox/chat?parent=example.com" 
+                height="300" 
+                width="300">
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>
